@@ -16,12 +16,14 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 h1{
-    color:#fff
+    color:#fff;
+    margin-bottom: 0px;
 }
 section{
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     width: 700px;
     height: 500px;
@@ -30,12 +32,25 @@ section img{
     width: 0;
     flex-grow: 1;
     object-fit: cover;
-    opacity:.8;
+    opacity:0.8;
     transition: .5s ease;
+    filter: grayscale(1);
 }
 section img:hover{
     border-radius: 50%;
     cursor:grab;
     width: 200px;
-    filter: contrast(120%);
+    filter: grayscale(0);
+}
+.hulk:hover{
+    border: 5px solid green;
+}
+.ironman:hover{
+    border: 5px solid red;
+}
+.thor:hover{
+    border: 5px solid yellow;
+}
+.viuda:hover{
+    border: 5px solid black;
 }
